@@ -37,17 +37,17 @@
                     },
                     colors: {
                         brand: {
-                            50: '#faf5ff',
-                            100: '#f3e8ff',
-                            200: '#e9d5ff',
-                            300: '#d8b4fe',
-                            400: '#c084fc',
-                            500: '#a855f7',
-                            600: '#9333ea',
-                            700: '#7e22ce',
-                            800: '#6b21a8',
-                            900: '#581c87',
-                            950: '#3b0764'
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                            950: '#172554'
                         }
                     }
                 }
@@ -62,11 +62,11 @@
                 linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
         }
         .glow-radial {
-            background: radial-gradient(circle at 50% 0%, rgba(147, 51, 234, 0.22) 0%, rgba(15, 23, 42, 0) 70%);
+            background: radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.22) 0%, rgba(15, 23, 42, 0) 70%);
         }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-purple-600 selection:text-white min-h-screen relative overflow-x-hidden flex flex-col justify-between">
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-blue-600 selection:text-white min-h-screen relative overflow-x-hidden flex flex-col justify-between">
 
     <!-- Ambient background glow & grid -->
     <div class="fixed inset-0 pointer-events-none z-0">
@@ -79,16 +79,16 @@
         <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-3 group">
                 <img src="assets/logo.png" alt="Vectorial Collective Logo" 
-                     class="w-10 h-10 rounded-xl object-contain shadow-lg shadow-purple-500/25 group-hover:scale-105 transition-transform bg-black border border-purple-500/30 p-1">
+                     class="w-10 h-10 rounded-xl object-contain shadow-lg shadow-blue-500/25 group-hover:scale-105 transition-transform bg-black border border-blue-500/30 p-1">
                 <div class="flex flex-col">
-                    <span class="text-base font-extrabold tracking-wider bg-gradient-to-r from-purple-400 via-fuchsia-300 to-white bg-clip-text text-transparent">VECTORIAL</span>
+                    <span class="text-base font-extrabold tracking-wider bg-gradient-to-r from-blue-400 via-sky-300 to-white bg-clip-text text-transparent">VECTORIAL</span>
                     <span class="text-[10px] tracking-widest text-slate-400 font-mono -mt-1 uppercase">Collective</span>
                 </div>
             </a>
 
             <!-- Navigation Links -->
             <div class="flex items-center gap-3 sm:gap-4 text-sm font-medium">
-                <a href="index.html" class="hidden sm:inline-flex text-slate-300 hover:text-purple-400 transition-colors items-center gap-1.5">
+                <a href="index.html" class="hidden sm:inline-flex text-slate-300 hover:text-blue-400 transition-colors items-center gap-1.5">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
                     <span>Home</span>
                 </a>
@@ -109,11 +109,11 @@
 
         <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu" class="hidden sm:hidden border-t border-slate-800 bg-slate-950/95 px-6 py-4 space-y-3 font-medium text-sm text-slate-300">
-            <a href="index.html" class="flex items-center gap-2 py-1 hover:text-purple-400">
+            <a href="index.html" class="flex items-center gap-2 py-1 hover:text-blue-400">
                 <span>← Back to Home</span>
             </a>
             <a href="https://github.com/vectorial-collective" target="_blank" class="block py-1 text-slate-400 hover:text-white">GitHub Organization ↗</a>
-            <a href="https://discord.gg/7zuhEbVrF" target="_blank" class="block py-1 text-purple-400 hover:text-purple-300">Join #the-forge Discord ↗</a>
+            <a href="https://discord.gg/7zuhEbVrF" target="_blank" class="block py-1 text-blue-400 hover:text-blue-300">Join #the-forge Discord ↗</a>
         </div>
     </header>
 
@@ -121,13 +121,13 @@
         <!-- Title & Header -->
         <div class="mb-10 text-center sm:text-left flex flex-col sm:flex-row sm:items-end justify-between gap-6 pb-8 border-b border-slate-800">
             <div>
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium bg-purple-950/80 border border-purple-800/50 text-purple-300 mb-3">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium bg-blue-950/80 border border-blue-800/50 text-blue-300 mb-3">
                     <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                     <span>Live GitHub Sync: Automatic</span>
                 </div>
                 <h1 class="text-3xl sm:text-5xl font-black tracking-tight text-white">Active Projects Directory</h1>
                 <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-2xl">
-                    Every repository created under the <a href="https://github.com/vectorial-collective" target="_blank" class="text-purple-400 underline decoration-purple-500/40 hover:decoration-purple-300 font-mono">@vectorial-collective</a> GitHub organization automatically synchronizes here in real time.
+                    Every repository created under the <a href="https://github.com/vectorial-collective" target="_blank" class="text-blue-400 underline decoration-blue-500/40 hover:decoration-blue-300 font-mono">@vectorial-collective</a> GitHub organization automatically synchronizes here in real time.
                 </p>
             </div>
 
@@ -137,7 +137,7 @@
                     <div id="repo-count" class="text-2xl font-black text-white font-mono">—</div>
                     <div class="text-[11px] font-mono text-slate-400 uppercase tracking-wider">Repositories</div>
                 </div>
-                <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
+                <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
                 </div>
             </div>
@@ -148,13 +148,13 @@
             <!-- Search bar -->
             <div class="relative flex-grow max-w-md">
                 <input id="search-input" type="text" placeholder="Search by project name, description, or keyword..."
-                       class="w-full bg-slate-900/90 border border-slate-800 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 rounded-xl px-4 py-2.5 pl-10 text-sm text-slate-200 placeholder-slate-500 transition-all font-sans outline-none">
+                       class="w-full bg-slate-900/90 border border-slate-800 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 rounded-xl px-4 py-2.5 pl-10 text-sm text-slate-200 placeholder-slate-500 transition-all font-sans outline-none">
                 <svg class="w-4 h-4 text-slate-500 absolute left-3.5 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
             </div>
 
             <!-- Quick Filter Pills -->
             <div class="flex flex-wrap items-center gap-2">
-                <button onclick="setFilter('all')" class="filter-btn active-filter px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium bg-purple-600 text-white border border-purple-500 transition-all">All</button>
+                <button onclick="setFilter('all')" class="filter-btn active-filter px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium bg-blue-600 text-white border border-blue-500 transition-all">All</button>
                 <button onclick="setFilter('C++')" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition-all">C++</button>
                 <button onclick="setFilter('Python')" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition-all">Python</button>
                 <button onclick="setFilter('has-issues')" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition-all">Open Issues</button>
@@ -192,7 +192,7 @@
             <div class="w-12 h-12 rounded-2xl bg-slate-800 text-slate-400 mx-auto flex items-center justify-center text-xl mb-4">🔍</div>
             <h3 class="text-lg font-bold text-white mb-1">No repositories found</h3>
             <p class="text-sm text-slate-400 max-w-sm mx-auto mb-6">No matching repositories matched your current query or filter criteria.</p>
-            <button onclick="resetFilters()" class="text-xs font-semibold text-purple-300 hover:text-purple-200 bg-purple-950/80 border border-purple-800/60 px-4 py-2 rounded-lg transition-all">Clear Filters</button>
+            <button onclick="resetFilters()" class="text-xs font-semibold text-blue-300 hover:text-blue-200 bg-blue-950/80 border border-blue-800/60 px-4 py-2 rounded-lg transition-all">Clear Filters</button>
         </div>
     </main>
 
@@ -201,14 +201,14 @@
         <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-3">
                 <img src="assets/logo.png" alt="Vectorial Collective Logo" 
-                     class="w-6 h-6 rounded-md object-contain bg-black border border-purple-500/30 p-0.5">
+                     class="w-6 h-6 rounded-md object-contain bg-black border border-blue-500/30 p-0.5">
                 <span class="text-slate-300 font-semibold">Vectorial Collective</span>
                 <span>— Open-source student simulation lab</span>
             </div>
             <div class="flex items-center gap-6 font-medium">
-                <a href="index.html" class="hover:text-purple-300 transition-colors">Home</a>
-                <a href="https://github.com/vectorial-collective" target="_blank" class="hover:text-purple-300 transition-colors">GitHub</a>
-                <a href="https://discord.gg/7zuhEbVrF" target="_blank" class="hover:text-purple-300 transition-colors">Discord</a>
+                <a href="index.html" class="hover:text-blue-300 transition-colors">Home</a>
+                <a href="https://github.com/vectorial-collective" target="_blank" class="hover:text-blue-300 transition-colors">GitHub</a>
+                <a href="https://discord.gg/7zuhEbVrF" target="_blank" class="hover:text-blue-300 transition-colors">Discord</a>
             </div>
         </div>
     </footer>
@@ -331,7 +331,7 @@
             };
 
             container.innerHTML = filtered.map(repo => {
-                const langColor = languageColors[repo.language] || '#a855f7';
+                const langColor = languageColors[repo.language] || '#3b82f6';
                 const formattedName = repo.name.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
                 const dateStr = new Date(repo.updated_at).toLocaleDateString(undefined, {
                     month: 'short',
@@ -344,11 +344,11 @@
                     : '';
 
                 return `
-                <div class="group relative bg-slate-900/60 hover:bg-slate-900/90 border border-slate-800 hover:border-purple-500/50 p-6 rounded-2xl transition-all duration-300 shadow-lg flex flex-col justify-between">
+                <div class="group relative bg-slate-900/60 hover:bg-slate-900/90 border border-slate-800 hover:border-blue-500/50 p-6 rounded-2xl transition-all duration-300 shadow-lg flex flex-col justify-between">
                     <div>
                         <!-- Header: Name & Language -->
                         <div class="flex items-start justify-between gap-3 mb-3">
-                            <h3 class="text-lg font-bold text-white group-hover:text-purple-400 transition-colors line-clamp-1" title="${repo.name}">
+                            <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-1" title="${repo.name}">
                                 ${formattedName}
                             </h3>
                             ${repo.language ? `
@@ -393,7 +393,7 @@
                         </div>
 
                         <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" 
-                           class="text-purple-400 hover:text-purple-300 font-semibold flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
+                           class="text-blue-400 hover:text-blue-300 font-semibold flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
                             <span>Repository</span>
                             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                         </a>
@@ -410,10 +410,10 @@
                     (filterType === 'C++' && btn.innerText.trim() === 'C++') ||
                     (filterType === 'Python' && btn.innerText.trim() === 'Python') ||
                     (filterType === 'has-issues' && btn.innerText.trim() === 'Open Issues')) {
-                    btn.classList.add('bg-purple-600', 'text-white', 'border-purple-500');
+                    btn.classList.add('bg-blue-600', 'text-white', 'border-blue-500');
                     btn.classList.remove('bg-slate-900', 'text-slate-300', 'border-slate-800');
                 } else {
-                    btn.classList.remove('bg-purple-600', 'text-white', 'border-purple-500');
+                    btn.classList.remove('bg-blue-600', 'text-white', 'border-blue-500');
                     btn.classList.add('bg-slate-900', 'text-slate-300', 'border-slate-800');
                 }
             });
